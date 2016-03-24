@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <title>Miel de chataignier</title>
+  </head>
+ <body>
+ 
+ <header> 	
+ 
+	<h1>Miel de chataigner</h1>
+	
+	<div id="image_acceuil">
+		<a href = "acceuil.html"><img src="assets/abeille_acceuil.png" alt="abeille" title="abeille"/></a>
+	</div>
+	
+	<div id="recherche">
+	
+		<form action="resultat_de_recherche.html" method="POST">
+			<input type="text" name="prenom">
+			<input type="submit" value="Rechercher">
+		</form>
+		
+	</div>
+  
+	<div id="panier">
+		<a href = "panier.html">
+			<figure>
+				<img src="assets/ruche.png" alt="panier" title="panier"/>
+				<figcaption>PANIER</figcaption> 
+			</figure>
+		</a> 
+		<br/>
+	</div>
+ 
+ </header>
+  
+<div class='ajoutPanier'>
+  <a href = "panier.html"><p>ajouter au panier</p></a>	<br/>	<!-- ajout dans le panier ? -->
+</div>
+
+	<p>
+		Le <strong>miel de Chataigner</strong> est un miel au goût amer bien prononcé.
+	</p>
+	<p>
+		Attention, il peut être difficile à apprécier, mais pour ceux qui savent s'y prendre avec lui, il devient excelent.
+	</p>
+	<h4>Disponibilité :</h4>
+	<p>
+		Disponible en pots de 500g (6,50€) et 1Kg(11,60€).
+	</p>
+ 
+ 
+	<div id="volet_clos">
+		<div id="volet"> 
+			<ul>
+				<li> <a href = "acceuil.html">acceuil</a>								</li>
+				<li> <a href = "qui_sommes_nous.html">qui sommes nous</a>				</li>
+				<li> <a href = "details_techniques.html">details techniques</a>			</li>
+				<li> <a href = "description.html">description</a>						</li>
+			</ul>
+			
+			<a href="#volet" class="ouvrir">Menu !</a>
+			<a href="#volet_clos" class="fermer">Fermer !</a>
+		</div>
+	</div>
+	
+        <h2>Autres types de miels :</h2><br/>
+
+		<div id="description">
+			<div class="miel_description"> 
+				<a href = "sapin.html">
+					<figure>
+						<img src="assets/pot_de_miel.png" alt="miel" title="sapin"/>
+						<figcaption>Miel de sapin</figcaption> 
+					</figure>
+				</a>
+			</div>
+
+			<div class="miel_description"> 				
+				<a href = "acacia.html">
+					<figure>
+						<img src="assets/pot_de_miel.png" alt="miel" title="acacia"/>
+						<figcaption>Miel d'acacia</figcaption> 
+					</figure>
+				</a>	
+			</div>
+				
+			<div class="miel_description"> 
+				<a href = "miellat.html">
+					<figure>
+						<img src="assets/pot_de_miel.png" alt="miel" title="miellat"/>
+						<figcaption>Miel de miellat</figcaption> 
+					</figure>
+				</a>
+			</div>
+		</div>
+	
+	<footer>
+		<h1>Contactez-nous :</h1>
+		<p>
+			07 81 12 31 29	<a href="mailto:loic.bronner@etu.univ-lyon1.fr">loic.bronner@etu.univ-lyon1.fr</a>
+		</p>	
+	</footer>
+ </body>
+</html>

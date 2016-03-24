@@ -1,0 +1,317 @@
+header {
+	border-style: solid;
+	padding: 0.5em 0.5em 0.5em;
+	border-color: transparent;
+	border-width: medium;
+	background-color: #bbbbbb;
+	opacity: 0.85;
+    filter: alpha(opacity=10);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+	padding: 0;
+}
+
+* {
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+
+html {
+	background-repeat:no-repeat;
+	background-position:right top;
+	background-image: url("cuillere.jpg");
+	background-attachment: fixed;
+}
+
+body {
+	display : table;
+    min-height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+footer {
+	display : table-row;
+	bottom: 0;
+	left: 0; 
+	right: 0;
+	
+	border-style: solid;
+	padding: 0.5em 0.5em 0.5em;
+	border-color: transparent;
+	border-width: medium;
+	background-color: #bbbbbb;
+	margin-top: 2em;
+	height: 5em;
+	opacity: 0.85;
+    filter: alpha(opacity=10);
+}
+
+footer a {
+	color: black;
+    position: relative;
+    bottom: 0em;
+	left: 10em;
+}
+
+#bande_du_bas {
+	border-style: solid;
+	padding: 0.5em 0.5em 0.5em;
+	border-color: transparent;
+	border-width: medium;
+	background-color: #bbbbbb;
+}
+
+#bande_du_bas a {
+	color: black;
+    position: relative;
+    bottom: 0em;
+	left: 10em;
+}
+
+#recherche {
+    position: absolute;
+    right: 25em;
+    top: 0.5em;	
+}
+
+#image_acceuil {
+    position: absolute;
+    right: 60em;
+    top: 0.5em;	
+}
+
+.presentation {
+	border-style: solid;
+	padding: 0.5em 0.5em 0.5em;
+	border-color: grey;
+	border-width: medium;
+	background-color: #bbbbbb;
+	width: 80%;
+	margin: auto;
+	opacity: 0.85;
+    filter: alpha(opacity=10);
+	margin-bottom: 2em;
+	clear: both;
+	overflow: hidden;
+}
+
+.presentation  p{
+	text-align: justify;
+	line-height: 2em;
+}
+
+#presentation {
+    width: 50em;
+    padding: 5em;
+    background: black; color: #fff;	
+    position: fixed;
+    left: 10em; top: 5em;
+	-webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+#texte_acceuil_img img {
+	width: 40em;
+	height: 20em;
+	float: left;
+	margin: 0.5em;
+}
+
+#texte_acceuil_img2 img {
+	width: 50em;
+	height: 25em;
+	float: right;
+	margin: 0.5em;
+}
+
+#payement {
+	background-image;
+}	
+
+#panier {
+    position: absolute;
+    right: 15em;
+    top: -1em;
+}
+
+.ajoutPanier  a{
+	display:block;
+	width:150px;
+	line-height:50px;
+	text-align:center;
+	vertical-align:middle;
+	background:url(boutonnoir.png) no-repeat;
+	color:white;
+	text-decoration:none;
+}
+
+.ajoutPanier a:hover {
+	background:url(boutonnoir2.png) no-repeat;
+}
+
+#volet {
+	float: left;
+    width: 15em;
+    padding: 1em;
+    background: opacity; color: #fff;	
+    position: fixed;
+    left: -20em; top: 5em;
+	-webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+#volet a.ouvrir {
+    padding: 0.5em 0.3em;
+    background: #555;
+    color: #fff;
+    text-decoration: none;
+
+    position: fixed;
+    right: 5em;
+    top: 0em;
+
+
+    border-radius: 0 0 0.5em 0.5em;
+}
+
+#volet a.fermer {
+    padding: 0.5em 0.3em;
+    background: #555;
+    color: #fff;
+    text-decoration: none;
+	
+    position: fixed;
+    right: 5em;
+    top: 0em;
+
+
+    border-radius: 0 0 0.5em 0.5em;
+}
+
+#volet:target {
+    left: 0;
+}
+
+#volet a.fermer {
+    display: none;
+}
+
+#volet_clos:target #volet {
+    left: -20em;
+}
+
+#volet:target a.ouvrir {
+    display: none;
+}
+
+#volet:target a.fermer {
+    display: block;
+}
+
+h1{
+	margin-top: 0.5em;
+}
+
+#titre_acceuil h1 {
+	font-size: 4em;
+}
+
+li{
+	line-height: 2em;
+}
+
+li a{
+    background: black;
+	color: white;
+	border-radius: 0.5em 0.5em 0.5em 0.5em;
+	border: 0.2em solid white;
+	padding: 0.3em;
+	font-size: 80%;
+}
+
+img {
+	width: 4em;
+	height: 4em;
+}
+
+figcaption {
+	color: black;
+}
+
+#description img {
+	width: 20em;
+	height: 20em;
+}
+
+.miel_description {
+	border-style: solid;
+	padding: 0.5em 0.5em 0.5em;
+	border-color: grey;
+	border-width: medium;
+	background-color: #bbbbbb;
+	width: 17%;
+	margin: 2em;
+	float: left;
+}
+
+.miel_description .ajoutPanier img {
+	float: right;
+}
+
+a:link{
+	text-decoration:none;
+}
+
+fieldset {
+	border: 0.2em solid black;
+}
+
+
+.webmaster {
+	border-style: solid;
+	padding: 0.5em 0.5em 0.5em;
+	border-color: grey ;
+	border-width: medium;
+	background-color: #bbbbbb;
+	width: 80%;
+	margin: 2em;
+	opacity: 0.85;
+    filter: alpha(opacity=10);
+	clear: both;
+	overflow: hidden;
+	text-align: justify;
+}
+
+.webmaster img {
+	width: 10em;
+	height: 10em;
+	float: left;
+	margin: 0.5em;
+}
+
+.details_techniques {
+	border-style: solid;
+	padding: 0.5em 0.5em 0.5em;
+	border-color: grey ;
+	border-width: medium;
+	background-color: #bbbbbb;
+	width: 80%;
+	margin: 2em;
+	opacity: 0.85;
+    filter: alpha(opacity=10);
+	clear: both;
+	overflow: hidden;	
+}
+
+
+
+/*
+@media all and (max-device-width: 480px){
+	=> pour le coté responsive, qui n'a pas eu le temps d'être mis en oeuvre.
+
+}
+*/

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <title>Payement</title>
+  </head>
+ <body>
+ 
+ 
+ 
+  <header> 	
+ 
+	<h1>Payement</h1>
+	
+	<div id="image_acceuil">
+		<a href = "acceuil.html"><img src="assets/abeille_acceuil.png" alt="abeille" title="abeille"/></a>
+	</div>
+	
+	<div id="recherche">
+	
+		<form action="resultat_de_recherche.html" method="POST">
+			<input type="text" name="prenom">
+			<input type="submit" value="Rechercher">
+		</form>
+		
+	</div>
+  
+	<div id="panier">
+		<a href = "panier.html">
+			<figure>
+				<img src="assets/ruche.png" alt="panier" title="panier"/>
+				<figcaption>PANIER</figcaption> 
+			</figure>
+		</a> 
+		<br/>
+	</div>
+	
+ </header>
+ 
+ <div id='payement'>
+ 
+ 
+	<div id="volet_clos">
+		<div id="volet"> 
+			<ul>
+				<li> <a href = "acceuil.html">acceuil</a>								</li>
+				<li> <a href = "qui_sommes_nous.html">qui sommes nous</a>				</li>
+				<li> <a href = "details_techniques.html">details techniques</a>			</li>
+				<li> <a href = "description.html">description</a>						</li>
+			</ul> 
+			
+			<a href="#volet" class="ouvrir">Menu !</a>
+			<a href="#volet_clos" class="fermer">Fermer !</a>
+		</div>
+	</div>
+	
+	<br><br>
+	
+	<h2>Formulaire (non obligatoire)</h2>
+	<fieldset>
+		<legend>Acheteur</legend>
+			<label>Nom: <input name="Nom_acheteur"></label>
+			<label>Prénom: <input name="Prenom_acheteur"></label>
+			<label>Adresse email: <input type="email" name="adresse"></label>
+			<label>Votre âge :<input type="number" name="age" min="18" max="99" step="1"></label>
+			<label for="prose"> Vous preferez : </label>
+				<select id="prose" name="parfum" size='1'>
+					<option>Sapin</option>
+					<option>Acacia</option>
+					<option>Chataignier</option>
+					<option>Miellat</option>
+				</select>
+			<label for="aime">Vous aimez le miel plutôt :</label> énormement <input type="range" name="aime" id="aime" min="0" max="100" step="1"> à la passion !
+	</fieldset>
+	
+	<br><br>
+	
+	<label for="commentaire">Un commentaire ? </label><br><textarea id="commentaire" name="commentaire"></textarea>
+	
+	<br><br><input type="submit" value="Envoyer"><br><br><br><br>
+
+	<h2>Payer</h2>
+	Mode de payement ?<br>
+		<label>CB : <input type="radio" name="payement" value="CB"></label>
+		<label>Paypal : <input type="radio" name="payement" value="Paypal"></label><br><br>
+	<label>Numeros carte: <input name="Numeros_carte"></label>
+	
+	<br><br><input type="submit" value="Payer"><br><br>
+
+</div>
+
+	
+	<footer>
+		<h1>Contactez-nous :</h1>
+		<p>
+			07 81 12 31 29	<a href="mailto:loic.bronner@etu.univ-lyon1.fr">loic.bronner@etu.univ-lyon1.fr</a>
+		</p>	
+	</footer>
+
+ </body>
+</html>
